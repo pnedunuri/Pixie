@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/relativeLayout">
+
+        <com.pixieproto.bluephish.pixieproto.CameraSourcePreview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camera_preview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+                android:id="@+id/capturedPicturePreview"
+                android:visibility="invisible" />
+
+            <Button
+                android:text="GO"
+                android:layout_width="@dimen/bottom_navigation_min_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/processButton"
+                android:layout_marginRight="45dp"
+                android:layout_marginEnd="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/retry_n_go_button"
+                android:alpha="0.7"
+                android:visibility="invisible" />
+
+            <Button
+                android:text="RETRY"
+                android:layout_width="@dimen/bottom_navigation_min_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/retryButton"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/retry_n_go_button"
+                android:alpha="0.7"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/button_capture"
+            android:layout_width="90dp"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/capture_button_selector"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="90dp" />
+    </RelativeLayout>
+</RelativeLayout>

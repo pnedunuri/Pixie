@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "/Users/nadunoorup/AndroidStudioProjects/PixieProto/layouts/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 879,
+                    "endColumn": 74,
+                    "endOffset": 949
+                },
+                "from": {
+                    "file": "/Users/nadunoorup/AndroidStudioProjects/PixieProto/layouts/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 551,
+                        "endColumn": 74,
+                        "endOffset": 621
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 954,
+                    "endColumn": 65,
+                    "endOffset": 1015
+                },
+                "from": {
+                    "file": "/Users/nadunoorup/AndroidStudioProjects/PixieProto/layouts/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 847,
+                        "endColumn": 65,
+                        "endOffset": 908
+                    }
+                }
+            }
+        ]
+    }
+]

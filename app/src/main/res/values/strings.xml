@@ -1,0 +1,11 @@
+<resources>
+    <string name="title_activity_pixie_proto">Pixie Prototype</string>
+    <string name="title_activity_camera">Photo</string>
+    <string name="title_activity_context_list">ContextList</string>
+
+    <style name="Theme.WaitCycle" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

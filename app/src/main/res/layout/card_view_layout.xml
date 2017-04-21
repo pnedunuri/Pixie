@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardBackgroundColor="@color/common_google_signin_btn_text_dark_disabled">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/card_view_title"
+                android:layout_width="match_parent"
+            android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="30dp" />
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="6dip"
+            android:paddingTop="6dip"
+            android:paddingRight="12dip"
+            android:paddingBottom="12dip"
+            android:background="@android:color/black"
+            android:id="@+id/layout_tags"
+            android:layout_below="@+id/extractedData"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/extractedData"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/card_view_title"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/closeCard"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_alignBottom="@+id/card_view_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
