@@ -70,7 +70,7 @@ public class ContextList extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        populateList();
+        populateList(0);
 
 //        SwipeableRecyclerViewTouchListener swipeTouchListener =
 //                new SwipeableRecyclerViewTouchListener(recyclerView,
@@ -104,13 +104,15 @@ public class ContextList extends AppCompatActivity {
 //        recyclerView.addOnItemTouchListener(swipeTouchListener);
     }
 
-    private void populateList() {
+    private void populateList(int position) {
+        position = (position >= mItems.size()) ? (mItems.size() - 1) : position;
         mAdapter = new CardViewAdapter(mItems);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(mAdapter);
+        recyclerView.scrollToPosition(position);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
@@ -213,7 +215,7 @@ public class ContextList extends AppCompatActivity {
         public void removeItemAtPosition(int position) {
             mItems.remove(position);
             metadataToVal.remove(position);
-            me.populateList();
+            me.populateList(position);
         }
 
         public class ViewHolder extends RecyclerView.ViewHolder {
